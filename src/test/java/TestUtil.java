@@ -25,6 +25,11 @@ public class TestUtil {
     assertFalse(util.compute(1, 2));
   }
 
+  @Test
+  public void testCompute_WithSumDivisibleByArgument() {
+    Util util = new Util();
+    assertTrue(util.compute(1, 3, 5)); // Sum = 9, 9 is divisible by 3
+  }
 
 
 
